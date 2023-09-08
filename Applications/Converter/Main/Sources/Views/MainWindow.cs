@@ -229,9 +229,9 @@ public partial class MainWindow : Window
         b3.Bind(nameof(s3.AllowForm),          AllowFormCheckBox,          nameof(AllowFormCheckBox.Checked));
         b3.Bind(nameof(s3.AllowAnnotation),    AllowAnnotationCheckBox,    nameof(AllowAnnotationCheckBox.Checked));
 
-        FormatComboBox.Bind(Resource.Formats);
-        PdfVersionComboBox.Bind(Resource.PdfVersions);
-        LanguageComboBox.Bind(Resource.Languages);
+        FormatComboBox.Bind(Surface.Formats);
+        PdfVersionComboBox.Bind(Surface.PdfVersions);
+        LanguageComboBox.Bind(Surface.Languages);
         BindText(vm); // Text (i18n)
     }
 
@@ -252,10 +252,10 @@ public partial class MainWindow : Window
         Text = vm.Settings.Title;
         PathLintToolTip.ToolTipTitle = Properties.Resources.ErrorInvalidChars;
 
-        SaveOptionComboBox.Bind(Resource.SaveOptions);
-        ViewOptionComboBox.Bind(Resource.ViewerOptions);
-        PostProcessComboBox.Bind(Resource.PostProcesses);
-        ColorModeComboBox.Bind(Resource.ColorModes);
+        SaveOptionComboBox.Bind(Surface.SaveOptions);
+        ViewOptionComboBox.Bind(Surface.ViewerOptions);
+        PostProcessComboBox.Bind(Surface.PostProcesses);
+        ColorModeComboBox.Bind(Surface.ColorModes);
     }
 
     #endregion

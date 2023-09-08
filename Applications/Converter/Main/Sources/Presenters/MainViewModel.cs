@@ -189,7 +189,7 @@ public sealed class MainViewModel : PresentableBase<Facade>
     /// </summary>
     ///
     /* --------------------------------------------------------------------- */
-    public void Help() => Send(new ProcessMessage(Resource.DocumentUri.ToString()));
+    public void Help() => Send(new ProcessMessage(Surface.DocumentUri.ToString()));
 
     /* --------------------------------------------------------------------- */
     ///
