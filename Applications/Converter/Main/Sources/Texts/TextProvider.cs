@@ -17,34 +17,113 @@
 /* ------------------------------------------------------------------------- */
 namespace Cube.Globalization;
 
-using System.Collections.Generic;
+using System;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
-public class TextGroup : Dictionary<string, string> { }
-
+/* ------------------------------------------------------------------------- */
+///
+/// TextGroup
+///
+/// <summary>
+/// Provides the functionality to get the text corresponding to a specific
+/// language.
+/// </summary>
+///
+/* ------------------------------------------------------------------------- */
 public abstract class TextProvider
 {
-    protected TextProvider(TextGroup src) => Default = src;
+    #region Constructors
 
-    protected TextGroup Default { get; }
+    /* --------------------------------------------------------------------- */
+    ///
+    /// TextProvider
+    ///
+    /// <summary>
+    /// Initializes a new instance of the TextProvider class with the
+    /// specified arguments.
+    /// </summary>
+    ///
+    /// <param name="creator">
+    /// Function to get a text group of the specified language.
+    /// </param>
+    ///
+    /// <param name="fallback">
+    /// Text group to be used if text in the specified language is not found.
+    /// </param>
+    ///
+    /* --------------------------------------------------------------------- */
+    protected TextProvider(Func<Language, TextGroup> creator, TextGroup fallback)
+    {
+        _creator = creator;
+        Fallback = fallback;
+    }
 
+    #endregion
+
+    #region Properties
+
+    /* --------------------------------------------------------------------- */
+    ///
+    /// Fallback
+    ///
+    /// <summary>
+    /// Text group to be used if text in the specified language is not found.
+    /// </summary>
+    ///
+    /* --------------------------------------------------------------------- */
+    protected TextGroup Fallback { get; }
+
+    /* --------------------------------------------------------------------- */
+    ///
+    /// Current
+    ///
+    /// <summary>
+    /// Text group corresponding to the currently specified language.
+    /// </summary>
+    ///
+    /* --------------------------------------------------------------------- */
     protected TextGroup Current { get => _current; }
 
+    #endregion
+
+    #region Methods
+
+    /* --------------------------------------------------------------------- */
+    ///
+    /// Get
+    ///
+    /// <summary>
+    /// Gets the text corresponding to the specified name.
+    /// </summary>
+    ///
+    /* --------------------------------------------------------------------- */
     protected string Get([CallerMemberName] string name = null)
     {
         if (Current is not null && Current.TryGetValue(name, out var s0)) return s0;
-        if (Default is not null && Default.TryGetValue(name, out var s1)) return s1;
+        if (Fallback is not null && Fallback.TryGetValue(name, out var s1)) return s1;
         return name;
     }
 
+    /* --------------------------------------------------------------------- */
+    ///
+    /// Reset
+    ///
+    /// <summary>
+    /// Resets the language settings.
+    /// </summary>
+    ///
+    /* --------------------------------------------------------------------- */
     protected void Reset(Language src)
     {
-        var dest = GetGroup(src);
+        var dest = _creator(src);
         _ = Interlocked.Exchange(ref _current, dest);
     }
 
-    protected abstract TextGroup GetGroup(Language src);
+    #endregion
 
+    #region Fields
+    private readonly Func<Language, TextGroup> _creator;
     private TextGroup _current;
+    #endregion
 }
