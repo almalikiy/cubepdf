@@ -19,6 +19,7 @@
 namespace Cube.Pdf.Converter;
 
 using Cube.Globalization;
+using Cube.Pdf.Converter.Sources;
 
 /* ------------------------------------------------------------------------- */
 ///
@@ -175,6 +176,6 @@ internal class Text : TextProvider
     #endregion
 
     #region Others
-    public Text() : base(_ => default, default) { }
+    public Text() : base(TextGroupFactory.Get, EnglishText.Get()) { }
     #endregion
 }
