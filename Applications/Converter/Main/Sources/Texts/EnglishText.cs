@@ -73,8 +73,8 @@ internal static class EnglishText
         { nameof(Text.Ui_PageLayout), "Layout" },
 
         // Labels for Security tab
-        { nameof(Text.Ui_OwnerPassword), "Password" },
-        { nameof(Text.Ui_UserPassword), "Password" },
+        { nameof(Text.Ui_OwnerPassword), "Password" }, // Omit "Owner" due to space limitation.
+        { nameof(Text.Ui_UserPassword), "Password" }, // Omit "User" due to space limitation.
         { nameof(Text.Ui_ConfirmPassword), "Confirm" },
         { nameof(Text.Ui_Operations), "Operations" },
 
