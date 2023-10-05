@@ -47,7 +47,8 @@ internal static class TextFactory
     /* --------------------------------------------------------------------- */
     public static TextGroup Get(Language e) => e switch
     {
-        Language.English => EnglishText.Get(),
+        Language.English  => EnglishText.Get(),
+        Language.Japanese => JapaneseText.Get(),
         _ => default,
     };
 }

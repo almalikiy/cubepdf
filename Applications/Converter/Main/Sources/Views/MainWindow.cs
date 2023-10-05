@@ -250,7 +250,7 @@ public partial class MainWindow : Window
         Properties.Resources.Culture = vm.Settings.Language.ToCultureInfo();
 
         Text = vm.Settings.Title;
-        PathLintToolTip.ToolTipTitle = Properties.Resources.ErrorInvalidChars;
+        PathLintToolTip.ToolTipTitle = Surface.Texts.Error_InvalidChars;
 
         SaveOptionComboBox.Bind(Surface.SaveOptions);
         ViewOptionComboBox.Bind(Surface.ViewerOptions);

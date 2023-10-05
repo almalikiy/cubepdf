@@ -332,8 +332,8 @@ public sealed class EncryptionViewModel : PresentableBase<Encryption>
     public bool Confirm()
     {
         bool fail(string s) { Send(Message.Error(s)); return false; }
-        if (Enabled && !OwnerCorrect) return fail(Properties.Resources.ErrorOwnerPassword);
-        if (Enabled && !UserCorrect ) return fail(Properties.Resources.ErrorUserPassword);
+        if (Enabled && !OwnerCorrect) return fail(Surface.Texts.Error_OwnerPassword);
+        if (Enabled && !UserCorrect ) return fail(Surface.Texts.Error_UserPassword);
         return true;
     }
 

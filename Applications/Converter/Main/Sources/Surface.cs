@@ -36,6 +36,8 @@ using Cube.Web.Extensions;
 /* ------------------------------------------------------------------------- */
 public static class Surface
 {
+    internal static Text Texts { get; } = new();
+
     #region ComboListSource
 
     /* --------------------------------------------------------------------- */
@@ -109,10 +111,10 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static ComboListSource<SaveOption> SaveOptions => new()
     {
-        { Properties.Resources.MenuOverwrite, SaveOption.Overwrite },
-        { Properties.Resources.MenuMergeHead, SaveOption.MergeHead },
-        { Properties.Resources.MenuMergeTail, SaveOption.MergeTail },
-        { Properties.Resources.MenuRename,    SaveOption.Rename    },
+        { Texts.Menu_Overwrite, SaveOption.Overwrite },
+        { Texts.Menu_MergeHead, SaveOption.MergeHead },
+        { Texts.Menu_MergeTail, SaveOption.MergeTail },
+        { Texts.Menu_Rename,    SaveOption.Rename    },
     };
 
     /* --------------------------------------------------------------------- */
@@ -127,12 +129,12 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static ComboListSource<ViewerOption> ViewerOptions => new()
     {
-        { Properties.Resources.MenuSinglePage,     ViewerOption.SinglePage     },
-        { Properties.Resources.MenuOneColumn,      ViewerOption.OneColumn      },
-        { Properties.Resources.MenuTwoPageLeft,    ViewerOption.TwoPageLeft    },
-        { Properties.Resources.MenuTwoPageRight,   ViewerOption.TwoPageRight   },
-        { Properties.Resources.MenuTwoColumnLeft,  ViewerOption.TwoColumnLeft  },
-        { Properties.Resources.MenuTwoColumnRight, ViewerOption.TwoColumnRight },
+        { Texts.Menu_SinglePage,     ViewerOption.SinglePage     },
+        { Texts.Menu_OneColumn,      ViewerOption.OneColumn      },
+        { Texts.Menu_TwoPageLeft,    ViewerOption.TwoPageLeft    },
+        { Texts.Menu_TwoPageRight,   ViewerOption.TwoPageRight   },
+        { Texts.Menu_TwoColumnLeft,  ViewerOption.TwoColumnLeft  },
+        { Texts.Menu_TwoColumnRight, ViewerOption.TwoColumnRight },
     };
 
     /* --------------------------------------------------------------------- */
@@ -147,10 +149,10 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static ComboListSource<PostProcess> PostProcesses => new()
     {
-        { Properties.Resources.MenuOpen,          PostProcess.Open          },
-        { Properties.Resources.MenuOpenDirectory, PostProcess.OpenDirectory },
-        { Properties.Resources.MenuNone,          PostProcess.None          },
-        { Properties.Resources.MenuOthers,        PostProcess.Others        },
+        { Texts.Menu_Open,          PostProcess.Open          },
+        { Texts.Menu_OpenDirectory, PostProcess.OpenDirectory },
+        { Texts.Menu_None,          PostProcess.None          },
+        { Texts.Menu_UserProgram,   PostProcess.Others        },
     };
 
     /* --------------------------------------------------------------------- */
@@ -165,9 +167,9 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static ComboListSource<Orientation> Orientations => new()
     {
-        { Properties.Resources.MenuPortrait,  Orientation.Portrait  },
-        { Properties.Resources.MenuLandscape, Orientation.Landscape },
-        { Properties.Resources.MenuAuto,      Orientation.Auto      },
+        { Texts.Menu_Portrait,  Orientation.Portrait  },
+        { Texts.Menu_Landscape, Orientation.Landscape },
+        { Texts.Menu_Auto,      Orientation.Auto      },
     };
 
     /* --------------------------------------------------------------------- */
@@ -182,10 +184,10 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static ComboListSource<ColorMode> ColorModes => new()
     {
-        { Properties.Resources.MenuAuto,       ColorMode.SameAsSource },
-        { Properties.Resources.MenuRgb,        ColorMode.Rgb          },
-        { Properties.Resources.MenuGrayscale,  ColorMode.Grayscale    },
-        { Properties.Resources.MenuMonochrome, ColorMode.Monochrome   },
+        { Texts.Menu_Auto,       ColorMode.SameAsSource },
+        { Texts.Menu_Rgb,        ColorMode.Rgb          },
+        { Texts.Menu_Grayscale,  ColorMode.Grayscale    },
+        { Texts.Menu_Monochrome, ColorMode.Monochrome   },
     };
 
     #endregion
@@ -207,10 +209,10 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static IList<FileDialogFilter> GetSourceFilters(this ExtensionList src) => new FileDialogFilter[]
     {
-        new(Properties.Resources.FilterPs,  src.GetCandidates(Format.Ps ).ToArray()),
-        new(Properties.Resources.FilterEps, src.GetCandidates(Format.Eps).ToArray()),
-        new(Properties.Resources.FilterPdf, src.GetCandidates(Format.Pdf).ToArray()),
-        new(Properties.Resources.FilterAll, ".*"),
+        new(Texts.Filter_Ps,  src.GetCandidates(Format.Ps ).ToArray()),
+        new(Texts.Filter_Eps, src.GetCandidates(Format.Eps).ToArray()),
+        new(Texts.Filter_Pdf, src.GetCandidates(Format.Pdf).ToArray()),
+        new(Texts.Filter_All, ".*"),
     };
 
     /* --------------------------------------------------------------------- */
@@ -228,13 +230,13 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static IList<FileDialogFilter> GetDestinationFilters(this ExtensionList src) => new FileDialogFilter[]
     {
-        new(Properties.Resources.FilterPdf,  src.GetCandidates(Format.Pdf ).ToArray()),
-        new(Properties.Resources.FilterPs,   src.GetCandidates(Format.Ps  ).ToArray()),
-        new(Properties.Resources.FilterEps,  src.GetCandidates(Format.Eps ).ToArray()),
-        new(Properties.Resources.FilterPng,  src.GetCandidates(Format.Png ).ToArray()),
-        new(Properties.Resources.FilterJpeg, src.GetCandidates(Format.Jpeg).ToArray()),
-        new(Properties.Resources.FilterBmp,  src.GetCandidates(Format.Bmp ).ToArray()),
-        new(Properties.Resources.FilterTiff, src.GetCandidates(Format.Tiff).ToArray()),
+        new(Texts.Filter_Pdf,  src.GetCandidates(Format.Pdf ).ToArray()),
+        new(Texts.Filter_Ps,   src.GetCandidates(Format.Ps  ).ToArray()),
+        new(Texts.Filter_Eps,  src.GetCandidates(Format.Eps ).ToArray()),
+        new(Texts.Filter_Png,  src.GetCandidates(Format.Png ).ToArray()),
+        new(Texts.Filter_Jpg,  src.GetCandidates(Format.Jpeg).ToArray()),
+        new(Texts.Filter_Bmp,  src.GetCandidates(Format.Bmp ).ToArray()),
+        new(Texts.Filter_Tiff, src.GetCandidates(Format.Tiff).ToArray()),
     };
 
     /* --------------------------------------------------------------------- */
@@ -252,8 +254,8 @@ public static class Surface
     /* --------------------------------------------------------------------- */
     public static IList<FileDialogFilter> GetProgramFilters(this ExtensionList src) => new FileDialogFilter[]
     {
-        new(Properties.Resources.FilterExecutable, ".exe", ".bat"),
-        new(Properties.Resources.FilterAll, ".*"),
+        new(Texts.Filter_Exe, ".exe", ".bat"),
+        new(Texts.Filter_All, ".*"),
     };
 
     #endregion

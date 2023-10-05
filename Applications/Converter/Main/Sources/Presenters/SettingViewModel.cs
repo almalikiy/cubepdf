@@ -405,7 +405,7 @@ public sealed class SettingViewModel : PresentableBase<SettingFacade>
     public bool Confirm()
     {
         bool fail(string s) { Send(Message.Error(s)); return false; }
-        if (!Io.Exists(Source)) return fail(Properties.Resources.ErrorSource);
+        if (!Io.Exists(Source)) return fail(Surface.Texts.Error_Source);
         if (!Io.Exists(Destination) || SaveOption == SaveOption.Rename) return true;
 
         var msg = Message.From(Destination, SaveOption);

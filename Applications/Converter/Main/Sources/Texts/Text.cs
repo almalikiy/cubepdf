@@ -176,6 +176,6 @@ internal class Text : TextProvider
     #endregion
 
     #region Others
-    public Text() : base(TextFactory.Get, EnglishText.Get()) { }
+    public Text() : base(TextFactory.Get, EnglishText.Get()) => Locale.Subscribe(Reset);
     #endregion
 }
