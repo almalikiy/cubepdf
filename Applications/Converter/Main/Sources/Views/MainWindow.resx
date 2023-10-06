@@ -1069,7 +1069,7 @@
   <data name="&gt;&gt;GeneralTabPage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="DocumentPage.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="MetadataTabPage.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="DocumentPanel.ColumnCount" type="System.Int32, mscorlib">
@@ -1457,7 +1457,7 @@
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DocumentPanel.Parent" xml:space="preserve">
-    <value>DocumentPage</value>
+    <value>MetadataTabPage</value>
   </data>
   <data name="&gt;&gt;DocumentPanel.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1465,70 +1465,70 @@
   <data name="DocumentPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="ViewOptionComboBox" Row="6" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="ViewerOptionLabel" Row="6" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="CreatorTextBox" Row="5" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="CreatorLabel" Row="5" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="KeywordsTextBox" Row="4" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="KeywordLabel" Row="4" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="SubjectTextBox" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="SubjectLabel" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="AuthorTextBox" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="AuthorLabel" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="TitleTextBox" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="TitleLabel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,9,Absolute,100,Percent,100,Absolute,9" /&gt;&lt;Rows Styles="Absolute,15,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29,Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="DocumentPage.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="MetadataTabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
   </data>
-  <data name="DocumentPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MetadataTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>482, 368</value>
   </data>
-  <data name="DocumentPage.TabIndex" type="System.Int32, mscorlib">
+  <data name="MetadataTabPage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="DocumentPage.Text" xml:space="preserve">
+  <data name="MetadataTabPage.Text" xml:space="preserve">
     <value>Metadata</value>
   </data>
-  <data name="&gt;&gt;DocumentPage.Name" xml:space="preserve">
-    <value>DocumentPage</value>
+  <data name="&gt;&gt;MetadataTabPage.Name" xml:space="preserve">
+    <value>MetadataTabPage</value>
   </data>
-  <data name="&gt;&gt;DocumentPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;MetadataTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DocumentPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MetadataTabPage.Parent" xml:space="preserve">
     <value>SettingTabControl</value>
   </data>
-  <data name="&gt;&gt;DocumentPage.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;MetadataTabPage.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="EncryptionTabPage.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="SecurityTabPage.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="EncryptionOuterPanel.ColumnCount" type="System.Int32, mscorlib">
+  <data name="SecurityOuterPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="EncryptionCheckBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="SecurityCheckBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="EncryptionCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="SecurityCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="EncryptionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SecurityCheckBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 15</value>
   </data>
-  <data name="EncryptionCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="SecurityCheckBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 0, 0, 0</value>
   </data>
-  <data name="EncryptionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SecurityCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>461, 25</value>
   </data>
-  <data name="EncryptionCheckBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="SecurityCheckBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="EncryptionCheckBox.Text" xml:space="preserve">
+  <data name="SecurityCheckBox.Text" xml:space="preserve">
     <value>Encrypt the PDF with password</value>
   </data>
-  <data name="&gt;&gt;EncryptionCheckBox.Name" xml:space="preserve">
-    <value>EncryptionCheckBox</value>
+  <data name="&gt;&gt;SecurityCheckBox.Name" xml:space="preserve">
+    <value>SecurityCheckBox</value>
   </data>
-  <data name="&gt;&gt;EncryptionCheckBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;SecurityCheckBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;EncryptionCheckBox.Parent" xml:space="preserve">
-    <value>EncryptionOuterPanel</value>
+  <data name="&gt;&gt;SecurityCheckBox.Parent" xml:space="preserve">
+    <value>SecurityOuterPanel</value>
   </data>
-  <data name="&gt;&gt;EncryptionCheckBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SecurityCheckBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="EncryptionPanel.ColumnCount" type="System.Int32, mscorlib">
+  <data name="SecurityPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="UserPasswordCheckBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -1559,7 +1559,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UserPasswordCheckBox.Parent" xml:space="preserve">
-    <value>EncryptionPanel</value>
+    <value>SecurityPanel</value>
   </data>
   <data name="&gt;&gt;UserPasswordCheckBox.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1595,7 +1595,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OperationLabel.Parent" xml:space="preserve">
-    <value>EncryptionPanel</value>
+    <value>SecurityPanel</value>
   </data>
   <data name="&gt;&gt;OperationLabel.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -1619,7 +1619,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OwnerConfirmTextBox.Parent" xml:space="preserve">
-    <value>EncryptionPanel</value>
+    <value>SecurityPanel</value>
   </data>
   <data name="&gt;&gt;OwnerConfirmTextBox.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -1655,7 +1655,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OwnerConfirmLabel.Parent" xml:space="preserve">
-    <value>EncryptionPanel</value>
+    <value>SecurityPanel</value>
   </data>
   <data name="&gt;&gt;OwnerConfirmLabel.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1679,7 +1679,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OwnerPasswordTextBox.Parent" xml:space="preserve">
-    <value>EncryptionPanel</value>
+    <value>SecurityPanel</value>
   </data>
   <data name="&gt;&gt;OwnerPasswordTextBox.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1715,7 +1715,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OwnerPasswordLabel.Parent" xml:space="preserve">
-    <value>EncryptionPanel</value>
+    <value>SecurityPanel</value>
   </data>
   <data name="&gt;&gt;OwnerPasswordLabel.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -2171,7 +2171,7 @@
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OperationPanel.Parent" xml:space="preserve">
-    <value>EncryptionPanel</value>
+    <value>SecurityPanel</value>
   </data>
   <data name="&gt;&gt;OperationPanel.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -2179,91 +2179,91 @@
   <data name="OperationPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="SharePasswordCheckBox" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="UserPasswordPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="PermissionPanel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,58,Absolute,25,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="EncryptionPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="SecurityPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="EncryptionPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SecurityPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 40</value>
   </data>
-  <data name="EncryptionPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="SecurityPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="EncryptionPanel.RowCount" type="System.Int32, mscorlib">
+  <data name="SecurityPanel.RowCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="EncryptionPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SecurityPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>464, 316</value>
   </data>
-  <data name="EncryptionPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="SecurityPanel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;EncryptionPanel.Name" xml:space="preserve">
-    <value>EncryptionPanel</value>
+  <data name="&gt;&gt;SecurityPanel.Name" xml:space="preserve">
+    <value>SecurityPanel</value>
   </data>
-  <data name="&gt;&gt;EncryptionPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;SecurityPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;EncryptionPanel.Parent" xml:space="preserve">
-    <value>EncryptionOuterPanel</value>
+  <data name="&gt;&gt;SecurityPanel.Parent" xml:space="preserve">
+    <value>SecurityOuterPanel</value>
   </data>
-  <data name="&gt;&gt;EncryptionPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SecurityPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="EncryptionPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+  <data name="SecurityPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="UserPasswordCheckBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="OperationLabel" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="OwnerConfirmTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="OwnerConfirmLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="OwnerPasswordTextBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="OwnerPasswordLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="OperationPanel" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,Percent,100" /&gt;&lt;Rows Styles="Absolute,29,Absolute,29,Absolute,25,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="EncryptionOuterPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="SecurityOuterPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="EncryptionOuterPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SecurityOuterPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="EncryptionOuterPanel.RowCount" type="System.Int32, mscorlib">
+  <data name="SecurityOuterPanel.RowCount" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="EncryptionOuterPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SecurityOuterPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>482, 356</value>
   </data>
-  <data name="EncryptionOuterPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="SecurityOuterPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;EncryptionOuterPanel.Name" xml:space="preserve">
-    <value>EncryptionOuterPanel</value>
+  <data name="&gt;&gt;SecurityOuterPanel.Name" xml:space="preserve">
+    <value>SecurityOuterPanel</value>
   </data>
-  <data name="&gt;&gt;EncryptionOuterPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;SecurityOuterPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;EncryptionOuterPanel.Parent" xml:space="preserve">
-    <value>EncryptionTabPage</value>
+  <data name="&gt;&gt;SecurityOuterPanel.Parent" xml:space="preserve">
+    <value>SecurityTabPage</value>
   </data>
-  <data name="&gt;&gt;EncryptionOuterPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SecurityOuterPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="EncryptionOuterPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="EncryptionCheckBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="EncryptionPanel" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,9,Percent,100,Absolute,9" /&gt;&lt;Rows Styles="Absolute,15,Absolute,25,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  <data name="SecurityOuterPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="SecurityCheckBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="SecurityPanel" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,9,Percent,100,Absolute,9" /&gt;&lt;Rows Styles="Absolute,15,Absolute,25,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="EncryptionTabPage.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="SecurityTabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
   </data>
-  <data name="EncryptionTabPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SecurityTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>482, 368</value>
   </data>
-  <data name="EncryptionTabPage.TabIndex" type="System.Int32, mscorlib">
+  <data name="SecurityTabPage.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="EncryptionTabPage.Text" xml:space="preserve">
+  <data name="SecurityTabPage.Text" xml:space="preserve">
     <value>Security</value>
   </data>
-  <data name="&gt;&gt;EncryptionTabPage.Name" xml:space="preserve">
-    <value>EncryptionTabPage</value>
+  <data name="&gt;&gt;SecurityTabPage.Name" xml:space="preserve">
+    <value>SecurityTabPage</value>
   </data>
-  <data name="&gt;&gt;EncryptionTabPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;SecurityTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;EncryptionTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SecurityTabPage.Parent" xml:space="preserve">
     <value>SettingTabControl</value>
   </data>
-  <data name="&gt;&gt;EncryptionTabPage.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;SecurityTabPage.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="OtherTabPage.AutoScroll" type="System.Boolean, mscorlib">

@@ -64,7 +64,7 @@
             this.FormatPanel = new System.Windows.Forms.TableLayoutPanel();
             this.PdfVersionComboBox = new System.Windows.Forms.ComboBox();
             this.FormatComboBox = new System.Windows.Forms.ComboBox();
-            this.DocumentPage = new System.Windows.Forms.TabPage();
+            this.MetadataTabPage = new System.Windows.Forms.TabPage();
             this.DocumentPanel = new System.Windows.Forms.TableLayoutPanel();
             this.ViewOptionComboBox = new System.Windows.Forms.ComboBox();
             this.ViewerOptionLabel = new System.Windows.Forms.Label();
@@ -78,10 +78,10 @@
             this.AuthorLabel = new System.Windows.Forms.Label();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.TitleLabel = new System.Windows.Forms.Label();
-            this.EncryptionTabPage = new System.Windows.Forms.TabPage();
-            this.EncryptionOuterPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.EncryptionCheckBox = new System.Windows.Forms.CheckBox();
-            this.EncryptionPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.SecurityTabPage = new System.Windows.Forms.TabPage();
+            this.SecurityOuterPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.SecurityCheckBox = new System.Windows.Forms.CheckBox();
+            this.SecurityPanel = new System.Windows.Forms.TableLayoutPanel();
             this.UserPasswordCheckBox = new System.Windows.Forms.CheckBox();
             this.OperationLabel = new System.Windows.Forms.Label();
             this.OwnerConfirmTextBox = new System.Windows.Forms.TextBox();
@@ -127,11 +127,11 @@
             this.SourcePanel.SuspendLayout();
             this.DestinationPanel.SuspendLayout();
             this.FormatPanel.SuspendLayout();
-            this.DocumentPage.SuspendLayout();
+            this.MetadataTabPage.SuspendLayout();
             this.DocumentPanel.SuspendLayout();
-            this.EncryptionTabPage.SuspendLayout();
-            this.EncryptionOuterPanel.SuspendLayout();
-            this.EncryptionPanel.SuspendLayout();
+            this.SecurityTabPage.SuspendLayout();
+            this.SecurityOuterPanel.SuspendLayout();
+            this.SecurityPanel.SuspendLayout();
             this.OperationPanel.SuspendLayout();
             this.UserPasswordPanel.SuspendLayout();
             this.PermissionPanel.SuspendLayout();
@@ -153,8 +153,8 @@
             // SettingTabControl
             //
             this.SettingTabControl.Controls.Add(this.GeneralTabPage);
-            this.SettingTabControl.Controls.Add(this.DocumentPage);
-            this.SettingTabControl.Controls.Add(this.EncryptionTabPage);
+            this.SettingTabControl.Controls.Add(this.MetadataTabPage);
+            this.SettingTabControl.Controls.Add(this.SecurityTabPage);
             this.SettingTabControl.Controls.Add(this.OtherTabPage);
             resources.ApplyResources(this.SettingTabControl, "SettingTabControl");
             this.SettingTabControl.Name = "SettingTabControl";
@@ -396,12 +396,12 @@
             this.FormatComboBox.FormattingEnabled = true;
             this.FormatComboBox.Name = "FormatComboBox";
             //
-            // DocumentPage
+            // MetadataTabPage
             //
-            resources.ApplyResources(this.DocumentPage, "DocumentPage");
-            this.DocumentPage.Controls.Add(this.DocumentPanel);
-            this.DocumentPage.Name = "DocumentPage";
-            this.DocumentPage.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.MetadataTabPage, "MetadataTabPage");
+            this.MetadataTabPage.Controls.Add(this.DocumentPanel);
+            this.MetadataTabPage.Name = "MetadataTabPage";
+            this.MetadataTabPage.UseVisualStyleBackColor = true;
             //
             // DocumentPanel
             //
@@ -482,38 +482,38 @@
             resources.ApplyResources(this.TitleLabel, "TitleLabel");
             this.TitleLabel.Name = "TitleLabel";
             //
-            // EncryptionTabPage
+            // SecurityTabPage
             //
-            resources.ApplyResources(this.EncryptionTabPage, "EncryptionTabPage");
-            this.EncryptionTabPage.Controls.Add(this.EncryptionOuterPanel);
-            this.EncryptionTabPage.Name = "EncryptionTabPage";
-            this.EncryptionTabPage.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.SecurityTabPage, "SecurityTabPage");
+            this.SecurityTabPage.Controls.Add(this.SecurityOuterPanel);
+            this.SecurityTabPage.Name = "SecurityTabPage";
+            this.SecurityTabPage.UseVisualStyleBackColor = true;
             //
-            // EncryptionOuterPanel
+            // SecurityOuterPanel
             //
-            resources.ApplyResources(this.EncryptionOuterPanel, "EncryptionOuterPanel");
-            this.EncryptionOuterPanel.Controls.Add(this.EncryptionCheckBox, 1, 1);
-            this.EncryptionOuterPanel.Controls.Add(this.EncryptionPanel, 1, 2);
-            this.EncryptionOuterPanel.Name = "EncryptionOuterPanel";
+            resources.ApplyResources(this.SecurityOuterPanel, "SecurityOuterPanel");
+            this.SecurityOuterPanel.Controls.Add(this.SecurityCheckBox, 1, 1);
+            this.SecurityOuterPanel.Controls.Add(this.SecurityPanel, 1, 2);
+            this.SecurityOuterPanel.Name = "SecurityOuterPanel";
             //
-            // EncryptionCheckBox
+            // SecurityCheckBox
             //
-            this.EncryptionCheckBox.AutoEllipsis = true;
-            resources.ApplyResources(this.EncryptionCheckBox, "EncryptionCheckBox");
-            this.EncryptionCheckBox.Name = "EncryptionCheckBox";
-            this.EncryptionCheckBox.UseVisualStyleBackColor = true;
+            this.SecurityCheckBox.AutoEllipsis = true;
+            resources.ApplyResources(this.SecurityCheckBox, "SecurityCheckBox");
+            this.SecurityCheckBox.Name = "SecurityCheckBox";
+            this.SecurityCheckBox.UseVisualStyleBackColor = true;
             //
-            // EncryptionPanel
+            // SecurityPanel
             //
-            resources.ApplyResources(this.EncryptionPanel, "EncryptionPanel");
-            this.EncryptionPanel.Controls.Add(this.UserPasswordCheckBox, 1, 2);
-            this.EncryptionPanel.Controls.Add(this.OperationLabel, 0, 2);
-            this.EncryptionPanel.Controls.Add(this.OwnerConfirmTextBox, 1, 1);
-            this.EncryptionPanel.Controls.Add(this.OwnerConfirmLabel, 0, 1);
-            this.EncryptionPanel.Controls.Add(this.OwnerPasswordTextBox, 1, 0);
-            this.EncryptionPanel.Controls.Add(this.OwnerPasswordLabel, 0, 0);
-            this.EncryptionPanel.Controls.Add(this.OperationPanel, 1, 3);
-            this.EncryptionPanel.Name = "EncryptionPanel";
+            resources.ApplyResources(this.SecurityPanel, "SecurityPanel");
+            this.SecurityPanel.Controls.Add(this.UserPasswordCheckBox, 1, 2);
+            this.SecurityPanel.Controls.Add(this.OperationLabel, 0, 2);
+            this.SecurityPanel.Controls.Add(this.OwnerConfirmTextBox, 1, 1);
+            this.SecurityPanel.Controls.Add(this.OwnerConfirmLabel, 0, 1);
+            this.SecurityPanel.Controls.Add(this.OwnerPasswordTextBox, 1, 0);
+            this.SecurityPanel.Controls.Add(this.OwnerPasswordLabel, 0, 0);
+            this.SecurityPanel.Controls.Add(this.OperationPanel, 1, 3);
+            this.SecurityPanel.Name = "SecurityPanel";
             //
             // UserPasswordCheckBox
             //
@@ -790,13 +790,13 @@
             this.DestinationPanel.ResumeLayout(false);
             this.DestinationPanel.PerformLayout();
             this.FormatPanel.ResumeLayout(false);
-            this.DocumentPage.ResumeLayout(false);
+            this.MetadataTabPage.ResumeLayout(false);
             this.DocumentPanel.ResumeLayout(false);
             this.DocumentPanel.PerformLayout();
-            this.EncryptionTabPage.ResumeLayout(false);
-            this.EncryptionOuterPanel.ResumeLayout(false);
-            this.EncryptionPanel.ResumeLayout(false);
-            this.EncryptionPanel.PerformLayout();
+            this.SecurityTabPage.ResumeLayout(false);
+            this.SecurityOuterPanel.ResumeLayout(false);
+            this.SecurityPanel.ResumeLayout(false);
+            this.SecurityPanel.PerformLayout();
             this.OperationPanel.ResumeLayout(false);
             this.UserPasswordPanel.ResumeLayout(false);
             this.UserPasswordPanel.PerformLayout();
@@ -847,7 +847,7 @@
         private System.Windows.Forms.TableLayoutPanel FormatPanel;
         private System.Windows.Forms.ComboBox PdfVersionComboBox;
         private System.Windows.Forms.ComboBox FormatComboBox;
-        private System.Windows.Forms.TabPage DocumentPage;
+        private System.Windows.Forms.TabPage MetadataTabPage;
         private System.Windows.Forms.TableLayoutPanel DocumentPanel;
         private System.Windows.Forms.ComboBox ViewOptionComboBox;
         private System.Windows.Forms.Label ViewerOptionLabel;
@@ -861,10 +861,10 @@
         private System.Windows.Forms.Label AuthorLabel;
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.Label TitleLabel;
-        private System.Windows.Forms.TabPage EncryptionTabPage;
-        private System.Windows.Forms.TableLayoutPanel EncryptionOuterPanel;
-        private System.Windows.Forms.CheckBox EncryptionCheckBox;
-        private System.Windows.Forms.TableLayoutPanel EncryptionPanel;
+        private System.Windows.Forms.TabPage SecurityTabPage;
+        private System.Windows.Forms.TableLayoutPanel SecurityOuterPanel;
+        private System.Windows.Forms.CheckBox SecurityCheckBox;
+        private System.Windows.Forms.TableLayoutPanel SecurityPanel;
         private System.Windows.Forms.CheckBox UserPasswordCheckBox;
         private System.Windows.Forms.Label OperationLabel;
         private System.Windows.Forms.TextBox OwnerConfirmTextBox;

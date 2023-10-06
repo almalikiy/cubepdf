@@ -191,11 +191,11 @@ public partial class MainWindow : Window
         b2.Bind(nameof(s2.Creator),  CreatorTextBox,     nameof(CreatorTextBox.Text));
         b2.Bind(nameof(s2.Options),  ViewOptionComboBox, nameof(ViewOptionComboBox.SelectedValue));
 
-        // Encryption
-        var s3 = vm.Encryption;
+        // Security
+        var s3 = vm.Security;
         var b3 = Behaviors.Hook(new BindingSource(s3, ""));
-        b3.Bind(nameof(s3.Enabled),            EncryptionCheckBox,         nameof(EncryptionCheckBox.Checked));
-        b3.Bind(nameof(s3.Enabled),            EncryptionPanel,            nameof(EncryptionPanel.Enabled), true);
+        b3.Bind(nameof(s3.Enabled),            SecurityCheckBox,           nameof(SecurityCheckBox.Checked));
+        b3.Bind(nameof(s3.Enabled),            SecurityPanel,              nameof(SecurityPanel.Enabled), true);
         b3.Bind(nameof(s3.OwnerPassword),      OwnerPasswordTextBox,       nameof(OwnerPasswordTextBox.Text));
         b3.Bind(nameof(s3.OwnerConfirm),       OwnerConfirmTextBox,        nameof(OwnerConfirmTextBox.Text));
         b3.Bind(nameof(s3.OpenWithPassword),   UserPasswordCheckBox,       nameof(UserPasswordCheckBox.Checked));
@@ -236,8 +236,8 @@ public partial class MainWindow : Window
         PortraitRadioButton.Text = Surface.Texts.Menu_Portrait;
 
         GeneralTabPage.Text = Surface.Texts.Ui_General;
-        DocumentPage.Text = Surface.Texts.Ui_Metadata;
-        EncryptionTabPage.Text = Surface.Texts.Ui_Security;
+        MetadataTabPage.Text = Surface.Texts.Ui_Metadata;
+        SecurityTabPage.Text = Surface.Texts.Ui_Security;
         OtherTabPage.Text = Surface.Texts.Ui_Others;
 
         SaveOptionComboBox.Bind(Surface.SaveOptions);

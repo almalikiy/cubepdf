@@ -58,7 +58,7 @@ class SettingTest : MockFixture
         Check(vm);
         Check(vm.Settings);
         Check(vm.Metadata);
-        Check(vm.Encryption);
+        Check(vm.Security);
     }
 
     /* --------------------------------------------------------------------- */
@@ -136,11 +136,11 @@ class SettingTest : MockFixture
     /// Check
     ///
     /// <summary>
-    /// Checks the default settings of the EncryptionViewModel object.
+    /// Checks the default settings of the SecurityViewModel object.
     /// </summary>
     ///
     /* --------------------------------------------------------------------- */
-    private void Check(EncryptionViewModel src)
+    private void Check(SecurityViewModel src)
     {
         Assert.That(src.Enabled,            Is.False, nameof(src.Enabled));
         Assert.That(src.OwnerPassword,      Is.Empty, nameof(src.OwnerPassword));
