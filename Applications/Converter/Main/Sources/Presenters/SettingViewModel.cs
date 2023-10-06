@@ -30,8 +30,8 @@ using Cube.Pdf.Ghostscript;
 /// SettingViewModel
 ///
 /// <summary>
-/// Represents the ViewModel for the general and others tabs in
-/// the main window.
+/// Represents the ViewModel for the General and Misc tabs in the
+/// MainWindow object.
 /// </summary>
 ///
 /* ------------------------------------------------------------------------- */

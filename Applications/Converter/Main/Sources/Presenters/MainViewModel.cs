@@ -91,8 +91,7 @@ public sealed class MainViewModel : PresentableBase<Facade>
     /// Settings
     ///
     /// <summary>
-    /// Gets the ViewModel object that represents General and Others
-    /// tabs.
+    /// Gets the ViewModel object that represents General and Misc tabs.
     /// </summary>
     ///
     /* --------------------------------------------------------------------- */

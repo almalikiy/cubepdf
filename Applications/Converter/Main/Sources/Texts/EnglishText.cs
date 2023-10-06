@@ -53,7 +53,7 @@ internal static class EnglishText
         { nameof(Text.Ui_General), "General" },
         { nameof(Text.Ui_Metadata), "Metadata" },
         { nameof(Text.Ui_Security), "Security" },
-        { nameof(Text.Ui_Others), "Others" },
+        { nameof(Text.Ui_Misc), "Others" },
 
         // Labels for General tab
         { nameof(Text.Ui_Source), "Source" },
@@ -78,7 +78,7 @@ internal static class EnglishText
         { nameof(Text.Ui_ConfirmPassword), "Confirm" },
         { nameof(Text.Ui_Operations), "Operations" },
 
-        // Labels for Others tab
+        // Labels for Misc tab
         { nameof(Text.Ui_About), "About" },
         { nameof(Text.Ui_Language), "Language" },
 
@@ -119,7 +119,7 @@ internal static class EnglishText
         { nameof(Text.Menu_AllowForm), "Allow filling in forms" },
         { nameof(Text.Menu_AllowAnnotation), "Allow creating and editing annotations" },
 
-        // Menus for Others tab (ComboBox, CheckBox, ...)
+        // Menus for Misc tab (ComboBox, CheckBox, ...)
         { nameof(Text.Menu_CheckUpdate), "Check for updates on startup" },
 
         // Titles for dialogs

@@ -2266,10 +2266,10 @@
   <data name="&gt;&gt;SecurityTabPage.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="OtherTabPage.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="MiscTabPage.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="OtherPanel.ColumnCount" type="System.Int32, mscorlib">
+  <data name="MiscPanel.ColumnCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="LanguageLabel.AutoSize" type="System.Boolean, mscorlib">
@@ -2303,7 +2303,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LanguageLabel.Parent" xml:space="preserve">
-    <value>OtherPanel</value>
+    <value>MiscPanel</value>
   </data>
   <data name="&gt;&gt;LanguageLabel.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2336,7 +2336,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UpdateCheckBox.Parent" xml:space="preserve">
-    <value>OtherPanel</value>
+    <value>MiscPanel</value>
   </data>
   <data name="&gt;&gt;UpdateCheckBox.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -2360,7 +2360,7 @@
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LanguageComboBox.Parent" xml:space="preserve">
-    <value>OtherPanel</value>
+    <value>MiscPanel</value>
   </data>
   <data name="&gt;&gt;LanguageComboBox.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -2393,7 +2393,7 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;AboutLabel.Parent" xml:space="preserve">
-    <value>OtherPanel</value>
+    <value>MiscPanel</value>
   </data>
   <data name="&gt;&gt;AboutLabel.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -2417,63 +2417,63 @@
     <value>Cube.Forms.Controls.VersionControl, Cube.Forms.Controls, Version=8.5.1.0, Culture=neutral, PublicKeyToken=0e74ef67a48f1ba0</value>
   </data>
   <data name="&gt;&gt;VersionPanel.Parent" xml:space="preserve">
-    <value>OtherPanel</value>
+    <value>MiscPanel</value>
   </data>
   <data name="&gt;&gt;VersionPanel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="OtherPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="MiscPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="OtherPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="MiscPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="OtherPanel.RowCount" type="System.Int32, mscorlib">
+  <data name="MiscPanel.RowCount" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="OtherPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MiscPanel.Size" type="System.Drawing.Size, System.Drawing">
     <value>482, 169</value>
   </data>
-  <data name="OtherPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="MiscPanel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;OtherPanel.Name" xml:space="preserve">
-    <value>OtherPanel</value>
+  <data name="&gt;&gt;MiscPanel.Name" xml:space="preserve">
+    <value>MiscPanel</value>
   </data>
-  <data name="&gt;&gt;OtherPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;MiscPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;OtherPanel.Parent" xml:space="preserve">
-    <value>OtherTabPage</value>
+  <data name="&gt;&gt;MiscPanel.Parent" xml:space="preserve">
+    <value>MiscTabPage</value>
   </data>
-  <data name="&gt;&gt;OtherPanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;MiscPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="OtherPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+  <data name="MiscPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="LanguageLabel" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="UpdateCheckBox" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="LanguageComboBox" Row="3" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="AboutLabel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="VersionPanel" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,9,Absolute,100,Percent,100,Absolute,9" /&gt;&lt;Rows Styles="Absolute,15,Absolute,100,Absolute,25,Absolute,29" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
-  <data name="OtherTabPage.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="MiscTabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
   </data>
-  <data name="OtherTabPage.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MiscTabPage.Size" type="System.Drawing.Size, System.Drawing">
     <value>482, 368</value>
   </data>
-  <data name="OtherTabPage.TabIndex" type="System.Int32, mscorlib">
+  <data name="MiscTabPage.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="OtherTabPage.Text" xml:space="preserve">
+  <data name="MiscTabPage.Text" xml:space="preserve">
     <value>Others</value>
   </data>
-  <data name="&gt;&gt;OtherTabPage.Name" xml:space="preserve">
-    <value>OtherTabPage</value>
+  <data name="&gt;&gt;MiscTabPage.Name" xml:space="preserve">
+    <value>MiscTabPage</value>
   </data>
-  <data name="&gt;&gt;OtherTabPage.Type" xml:space="preserve">
+  <data name="&gt;&gt;MiscTabPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;OtherTabPage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;MiscTabPage.Parent" xml:space="preserve">
     <value>SettingTabControl</value>
   </data>
-  <data name="&gt;&gt;OtherTabPage.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;MiscTabPage.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="SettingTabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">

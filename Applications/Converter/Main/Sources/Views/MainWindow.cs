@@ -133,7 +133,7 @@ public partial class MainWindow : Window
 
     #endregion
 
-    #region Implementations
+    #region Bindings
 
     /* --------------------------------------------------------------------- */
     ///
@@ -152,7 +152,7 @@ public partial class MainWindow : Window
         var b0 = Behaviors.Hook(new BindingSource(s0, ""));
         b0.Bind(nameof(s0.Busy), this, nameof(Busy), true);
 
-        // General and Others tab
+        // General and Misc tab
         var s1 = vm.Settings;
         var b1 = Behaviors.Hook(new BindingSource(s1, ""));
         b1.Bind(nameof(s1.Destination),         DestinationTextBox,     nameof(DestinationTextBox.Text));
@@ -238,7 +238,7 @@ public partial class MainWindow : Window
         GeneralTabPage.Text = Surface.Texts.Ui_General;
         MetadataTabPage.Text = Surface.Texts.Ui_Metadata;
         SecurityTabPage.Text = Surface.Texts.Ui_Security;
-        OtherTabPage.Text = Surface.Texts.Ui_Others;
+        MiscTabPage.Text = Surface.Texts.Ui_Misc;
 
         SaveOptionComboBox.Bind(Surface.SaveOptions);
         ViewOptionComboBox.Bind(Surface.ViewerOptions);

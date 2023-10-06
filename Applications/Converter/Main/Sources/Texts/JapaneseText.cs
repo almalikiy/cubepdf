@@ -53,7 +53,7 @@ internal static class JapaneseText
         { nameof(Text.Ui_General), "一般" },
         { nameof(Text.Ui_Metadata), "文書プロパティ" },
         { nameof(Text.Ui_Security), "セキュリティ" },
-        { nameof(Text.Ui_Others), "その他" },
+        { nameof(Text.Ui_Misc), "その他" },
 
         // Labels for General tab
         { nameof(Text.Ui_Source), "入力ファイル" },
@@ -78,7 +78,7 @@ internal static class JapaneseText
         { nameof(Text.Ui_ConfirmPassword), "パスワード確認" },
         { nameof(Text.Ui_Operations), "操作" },
 
-        // Labels for Others tab
+        // Labels for Misc tab
         { nameof(Text.Ui_About), "バージョン情報" },
         { nameof(Text.Ui_Language), "表示言語" },
 
@@ -119,7 +119,7 @@ internal static class JapaneseText
         { nameof(Text.Menu_AllowForm), "フォームへの入力を許可する" },
         { nameof(Text.Menu_AllowAnnotation), "注釈の追加、編集を許可する" },
 
-        // Menus for Others tab (ComboBox, CheckBox, ...)
+        // Menus for Misc tab (ComboBox, CheckBox, ...)
         { nameof(Text.Menu_CheckUpdate), "起動時にアップデートを確認する" },
 
         // Titles for dialogs

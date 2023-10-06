@@ -46,7 +46,7 @@ internal class Text : TextProvider
     public string Ui_General => Get();
     public string Ui_Metadata => Get();
     public string Ui_Security => Get();
-    public string Ui_Others => Get();
+    public string Ui_Misc => Get();
 
     /* --------------------------------------------------------------------- */
     // Labels for General tab
@@ -78,7 +78,7 @@ internal class Text : TextProvider
     public string Ui_Operations => Get();
 
     /* --------------------------------------------------------------------- */
-    // Labels for Others tab
+    // Labels for Misc tab
     /* --------------------------------------------------------------------- */
     public string Ui_About => Get();
     public string Ui_Language => Get();
@@ -127,7 +127,7 @@ internal class Text : TextProvider
     public string Menu_AllowAnnotation => Get();
 
     /* --------------------------------------------------------------------- */
-    // Menus for Others tab (ComboBox, CheckBox, ...)
+    // Menus for Misc tab (ComboBox, CheckBox, ...)
     /* --------------------------------------------------------------------- */
     public string Menu_CheckUpdate => Get();
 

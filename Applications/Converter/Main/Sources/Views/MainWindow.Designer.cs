@@ -102,8 +102,8 @@
             this.AllowFormCheckBox = new System.Windows.Forms.CheckBox();
             this.AllowCopyCheckBox = new System.Windows.Forms.CheckBox();
             this.AllowPrintCheckBox = new System.Windows.Forms.CheckBox();
-            this.OtherTabPage = new System.Windows.Forms.TabPage();
-            this.OtherPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.MiscTabPage = new System.Windows.Forms.TabPage();
+            this.MiscPanel = new System.Windows.Forms.TableLayoutPanel();
             this.LanguageLabel = new System.Windows.Forms.Label();
             this.UpdateCheckBox = new System.Windows.Forms.CheckBox();
             this.LanguageComboBox = new System.Windows.Forms.ComboBox();
@@ -135,8 +135,8 @@
             this.OperationPanel.SuspendLayout();
             this.UserPasswordPanel.SuspendLayout();
             this.PermissionPanel.SuspendLayout();
-            this.OtherTabPage.SuspendLayout();
-            this.OtherPanel.SuspendLayout();
+            this.MiscTabPage.SuspendLayout();
+            this.MiscPanel.SuspendLayout();
             this.FooterPanel.SuspendLayout();
             this.ToolPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HeaderPictureBox)).BeginInit();
@@ -155,7 +155,7 @@
             this.SettingTabControl.Controls.Add(this.GeneralTabPage);
             this.SettingTabControl.Controls.Add(this.MetadataTabPage);
             this.SettingTabControl.Controls.Add(this.SecurityTabPage);
-            this.SettingTabControl.Controls.Add(this.OtherTabPage);
+            this.SettingTabControl.Controls.Add(this.MiscTabPage);
             resources.ApplyResources(this.SettingTabControl, "SettingTabControl");
             this.SettingTabControl.Name = "SettingTabControl";
             this.SettingTabControl.SelectedIndex = 0;
@@ -648,22 +648,22 @@
             this.AllowPrintCheckBox.Name = "AllowPrintCheckBox";
             this.AllowPrintCheckBox.UseVisualStyleBackColor = true;
             //
-            // OtherTabPage
+            // MiscTabPage
             //
-            resources.ApplyResources(this.OtherTabPage, "OtherTabPage");
-            this.OtherTabPage.Controls.Add(this.OtherPanel);
-            this.OtherTabPage.Name = "OtherTabPage";
-            this.OtherTabPage.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.MiscTabPage, "MiscTabPage");
+            this.MiscTabPage.Controls.Add(this.MiscPanel);
+            this.MiscTabPage.Name = "MiscTabPage";
+            this.MiscTabPage.UseVisualStyleBackColor = true;
             //
-            // OtherPanel
+            // MiscPanel
             //
-            resources.ApplyResources(this.OtherPanel, "OtherPanel");
-            this.OtherPanel.Controls.Add(this.LanguageLabel, 1, 3);
-            this.OtherPanel.Controls.Add(this.UpdateCheckBox, 2, 2);
-            this.OtherPanel.Controls.Add(this.LanguageComboBox, 2, 3);
-            this.OtherPanel.Controls.Add(this.AboutLabel, 1, 1);
-            this.OtherPanel.Controls.Add(this.VersionPanel, 2, 1);
-            this.OtherPanel.Name = "OtherPanel";
+            resources.ApplyResources(this.MiscPanel, "MiscPanel");
+            this.MiscPanel.Controls.Add(this.LanguageLabel, 1, 3);
+            this.MiscPanel.Controls.Add(this.UpdateCheckBox, 2, 2);
+            this.MiscPanel.Controls.Add(this.LanguageComboBox, 2, 3);
+            this.MiscPanel.Controls.Add(this.AboutLabel, 1, 1);
+            this.MiscPanel.Controls.Add(this.VersionPanel, 2, 1);
+            this.MiscPanel.Name = "MiscPanel";
             //
             // LanguageLabel
             //
@@ -801,9 +801,9 @@
             this.UserPasswordPanel.ResumeLayout(false);
             this.UserPasswordPanel.PerformLayout();
             this.PermissionPanel.ResumeLayout(false);
-            this.OtherTabPage.ResumeLayout(false);
-            this.OtherPanel.ResumeLayout(false);
-            this.OtherPanel.PerformLayout();
+            this.MiscTabPage.ResumeLayout(false);
+            this.MiscPanel.ResumeLayout(false);
+            this.MiscPanel.PerformLayout();
             this.FooterPanel.ResumeLayout(false);
             this.ToolPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.HeaderPictureBox)).EndInit();
@@ -883,8 +883,8 @@
         private System.Windows.Forms.CheckBox AllowFormCheckBox;
         private System.Windows.Forms.CheckBox AllowCopyCheckBox;
         private System.Windows.Forms.CheckBox AllowPrintCheckBox;
-        private System.Windows.Forms.TabPage OtherTabPage;
-        private System.Windows.Forms.TableLayoutPanel OtherPanel;
+        private System.Windows.Forms.TabPage MiscTabPage;
+        private System.Windows.Forms.TableLayoutPanel MiscPanel;
         private System.Windows.Forms.Label LanguageLabel;
         private System.Windows.Forms.CheckBox UpdateCheckBox;
         private System.Windows.Forms.ComboBox LanguageComboBox;
