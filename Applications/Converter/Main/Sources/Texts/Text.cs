@@ -19,7 +19,6 @@
 namespace Cube.Pdf.Converter;
 
 using Cube.Globalization;
-using Cube.Pdf.Converter.Sources;
 
 /* ------------------------------------------------------------------------- */
 ///
@@ -176,6 +175,13 @@ internal class Text : TextProvider
     #endregion
 
     #region Others
-    public Text() : base(TextFactory.Get, EnglishText.Get()) => Locale.Subscribe(Reset);
+
+    public Text() : base(e => e switch
+    {
+        Language.English  => EnglishText.Get(),
+        Language.Japanese => JapaneseText.Get(),
+        _ => default,
+    }, EnglishText.Get()) => Locale.Subscribe(Reset);
+
     #endregion
 }
