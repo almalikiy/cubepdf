@@ -20,6 +20,7 @@ namespace Cube.Globalization;
 using System;
 using System.Runtime.CompilerServices;
 using System.Threading;
+using Cube.Collections;
 
 /* ------------------------------------------------------------------------- */
 ///
@@ -44,7 +45,7 @@ public abstract class TextProvider
     /// specified arguments.
     /// </summary>
     ///
-    /// <param name="creator">
+    /// <param name="factory">
     /// Function to get a text group of the specified language.
     /// </param>
     ///
@@ -53,9 +54,9 @@ public abstract class TextProvider
     /// </param>
     ///
     /* --------------------------------------------------------------------- */
-    protected TextProvider(Func<Language, TextGroup> creator, TextGroup fallback)
+    protected TextProvider(Func<Language, TextGroup> factory, TextGroup fallback)
     {
-        _creator = creator;
+        _factory = factory;
         Fallback = fallback;
     }
 
@@ -91,6 +92,25 @@ public abstract class TextProvider
 
     /* --------------------------------------------------------------------- */
     ///
+    /// Subscribe
+    ///
+    /// <summary>
+    /// Adds the specified callback to the subscription.
+    /// </summary>
+    ///
+    /// <param name="callback">
+    /// Callback action when the text group changes.
+    /// </param>
+    ///
+    /// <returns>
+    /// Object to remove the registered callback.
+    /// </returns>
+    ///
+    /* --------------------------------------------------------------------- */
+    public IDisposable Subscribe(Action callback) => _subscription.Subscribe(callback);
+
+    /* --------------------------------------------------------------------- */
+    ///
     /// Get
     ///
     /// <summary>
@@ -116,14 +136,16 @@ public abstract class TextProvider
     /* --------------------------------------------------------------------- */
     protected void Reset(Language src)
     {
-        var dest = _creator(src);
+        var dest = _factory(src);
         _ = Interlocked.Exchange(ref _current, dest);
+        foreach (var callback in _subscription) callback();
     }
 
     #endregion
 
     #region Fields
-    private readonly Func<Language, TextGroup> _creator;
+    private readonly Func<Language, TextGroup> _factory;
+    private readonly Subscription<Action> _subscription = new();
     private TextGroup _current;
     #endregion
 }
