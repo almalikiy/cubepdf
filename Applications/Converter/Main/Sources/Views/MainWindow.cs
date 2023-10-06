@@ -125,25 +125,8 @@ public partial class MainWindow : Window
         if (src is not MainViewModel vm) return;
 
         BindCore(vm);
-
-        Behaviors.Add(new ClickEventBehavior(ExecButton, vm.Invoke));
-        Behaviors.Add(new ClickEventBehavior(SourceButton, vm.SelectSource));
-        Behaviors.Add(new ClickEventBehavior(DestinationButton, vm.SelectDestination));
-        Behaviors.Add(new ClickEventBehavior(UserProgramButton, vm.SelectUserProgram));
-        Behaviors.Add(new ClickEventBehavior(SettingButton, vm.Save));
-        Behaviors.Add(new ClickEventBehavior(ExitButton, Close));
-        Behaviors.Add(new EventBehavior(DestinationTextBox, nameof(LostFocus), vm.ChangeExtension));
-        Behaviors.Add(new PathLintBehavior(SourceTextBox, PathLintToolTip));
-        Behaviors.Add(new PathLintBehavior(DestinationTextBox, PathLintToolTip));
-        Behaviors.Add(new PathLintBehavior(UserProgramTextBox, PathLintToolTip));
-        Behaviors.Add(new PasswordLintBehavior(OwnerPasswordTextBox, OwnerConfirmTextBox));
-        Behaviors.Add(new PasswordLintBehavior(UserPasswordTextBox, UserConfirmTextBox));
-        Behaviors.Add(new CloseBehavior(this, vm));
-        Behaviors.Add(new DialogBehavior(vm));
-        Behaviors.Add(new OpenFileBehavior(vm));
-        Behaviors.Add(new SaveFileBehavior(vm));
-        Behaviors.Add(new ProcessBehavior(vm));
-        Behaviors.Add(Surface.Texts.Subscribe(() => BindText(vm)));
+        BindTexts(vm); // i18n
+        BindBehaviors(vm);
 
         ShortcutKeys.Add(Keys.F1, vm.Help);
     }
@@ -232,30 +215,66 @@ public partial class MainWindow : Window
         FormatComboBox.Bind(Surface.Formats);
         PdfVersionComboBox.Bind(Surface.PdfVersions);
         LanguageComboBox.Bind(Surface.Languages);
-        BindText(vm); // Text (i18n)
     }
 
     /* --------------------------------------------------------------------- */
     ///
-    /// BindText
+    /// BindTexts
     ///
     /// <summary>
-    /// Sets the displayed text with the specified language.
+    /// Sets the displayed texts and related settings.
     /// </summary>
     ///
     /* --------------------------------------------------------------------- */
-    private void BindText(MainViewModel vm)
+    private void BindTexts(MainViewModel vm)
     {
         this.Update(vm.Settings.Language);
         Properties.Resources.Culture = vm.Settings.Language.ToCultureInfo();
 
         Text = vm.Settings.Title;
         PathLintToolTip.ToolTipTitle = Surface.Texts.Error_InvalidChars;
+        PortraitRadioButton.Text = Surface.Texts.Menu_Portrait;
+
+        GeneralTabPage.Text = Surface.Texts.Ui_General;
+        DocumentPage.Text = Surface.Texts.Ui_Metadata;
+        EncryptionTabPage.Text = Surface.Texts.Ui_Security;
+        OtherTabPage.Text = Surface.Texts.Ui_Others;
 
         SaveOptionComboBox.Bind(Surface.SaveOptions);
         ViewOptionComboBox.Bind(Surface.ViewerOptions);
         PostProcessComboBox.Bind(Surface.PostProcesses);
         ColorModeComboBox.Bind(Surface.ColorModes);
+    }
+
+    /* --------------------------------------------------------------------- */
+    ///
+    /// BindCore
+    ///
+    /// <summary>
+    /// Invokes the binding settings about behaviors.
+    /// </summary>
+    ///
+    /* --------------------------------------------------------------------- */
+    private void BindBehaviors(MainViewModel vm)
+    {
+        Behaviors.Add(new ClickEventBehavior(ExecButton, vm.Invoke));
+        Behaviors.Add(new ClickEventBehavior(SourceButton, vm.SelectSource));
+        Behaviors.Add(new ClickEventBehavior(DestinationButton, vm.SelectDestination));
+        Behaviors.Add(new ClickEventBehavior(UserProgramButton, vm.SelectUserProgram));
+        Behaviors.Add(new ClickEventBehavior(SettingButton, vm.Save));
+        Behaviors.Add(new ClickEventBehavior(ExitButton, Close));
+        Behaviors.Add(new EventBehavior(DestinationTextBox, nameof(LostFocus), vm.ChangeExtension));
+        Behaviors.Add(new PathLintBehavior(SourceTextBox, PathLintToolTip));
+        Behaviors.Add(new PathLintBehavior(DestinationTextBox, PathLintToolTip));
+        Behaviors.Add(new PathLintBehavior(UserProgramTextBox, PathLintToolTip));
+        Behaviors.Add(new PasswordLintBehavior(OwnerPasswordTextBox, OwnerConfirmTextBox));
+        Behaviors.Add(new PasswordLintBehavior(UserPasswordTextBox, UserConfirmTextBox));
+        Behaviors.Add(new CloseBehavior(this, vm));
+        Behaviors.Add(new DialogBehavior(vm));
+        Behaviors.Add(new OpenFileBehavior(vm));
+        Behaviors.Add(new SaveFileBehavior(vm));
+        Behaviors.Add(new ProcessBehavior(vm));
+        Behaviors.Add(Surface.Texts.Subscribe(() => BindTexts(vm)));
     }
 
     #endregion
