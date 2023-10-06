@@ -54,10 +54,37 @@ public abstract class TextProvider
     /// </param>
     ///
     /* --------------------------------------------------------------------- */
-    protected TextProvider(Func<Language, TextGroup> factory, TextGroup fallback)
+    protected TextProvider(Func<Language, TextGroup> factory, TextGroup fallback) :
+        this(factory, fallback, true) { }
+
+    /* --------------------------------------------------------------------- */
+    ///
+    /// TextProvider
+    ///
+    /// <summary>
+    /// Initializes a new instance of the TextProvider class with the
+    /// specified arguments.
+    /// </summary>
+    ///
+    /// <param name="factory">
+    /// Function to get a text group of the specified language.
+    /// </param>
+    ///
+    /// <param name="fallback">
+    /// Text group to be used if text in the specified language is not found.
+    /// </param>
+    ///
+    /// <param name="subscribe">
+    /// Value indicating whether or not to register the Reset method to the
+    /// Subscribe static method of the Locale class.
+    /// </param>
+    ///
+    /* --------------------------------------------------------------------- */
+    protected TextProvider(Func<Language, TextGroup> factory, TextGroup fallback, bool subscribe)
     {
         _factory = factory;
         Fallback = fallback;
+        if (subscribe) Locale.Subscribe(Reset);
     }
 
     #endregion

@@ -181,7 +181,7 @@ internal class Text : TextProvider
         Language.English  => EnglishText.Get(),
         Language.Japanese => JapaneseText.Get(),
         _ => default,
-    }, EnglishText.Get()) => Locale.Subscribe(Reset);
+    }, EnglishText.Get()) { }
 
     #endregion
 }
