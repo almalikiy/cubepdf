@@ -79,9 +79,9 @@
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.SecurityTabPage = new System.Windows.Forms.TabPage();
-            this.SecurityOuterPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.SecurityCheckBox = new System.Windows.Forms.CheckBox();
             this.SecurityPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.OwnerPasswordCheckBox = new System.Windows.Forms.CheckBox();
+            this.SecurityInnerPanel = new System.Windows.Forms.TableLayoutPanel();
             this.UserPasswordCheckBox = new System.Windows.Forms.CheckBox();
             this.OperationLabel = new System.Windows.Forms.Label();
             this.OwnerConfirmTextBox = new System.Windows.Forms.TextBox();
@@ -130,8 +130,8 @@
             this.MetadataTabPage.SuspendLayout();
             this.DocumentPanel.SuspendLayout();
             this.SecurityTabPage.SuspendLayout();
-            this.SecurityOuterPanel.SuspendLayout();
             this.SecurityPanel.SuspendLayout();
+            this.SecurityInnerPanel.SuspendLayout();
             this.OperationPanel.SuspendLayout();
             this.UserPasswordPanel.SuspendLayout();
             this.PermissionPanel.SuspendLayout();
@@ -485,35 +485,35 @@
             // SecurityTabPage
             //
             resources.ApplyResources(this.SecurityTabPage, "SecurityTabPage");
-            this.SecurityTabPage.Controls.Add(this.SecurityOuterPanel);
+            this.SecurityTabPage.Controls.Add(this.SecurityPanel);
             this.SecurityTabPage.Name = "SecurityTabPage";
             this.SecurityTabPage.UseVisualStyleBackColor = true;
-            //
-            // SecurityOuterPanel
-            //
-            resources.ApplyResources(this.SecurityOuterPanel, "SecurityOuterPanel");
-            this.SecurityOuterPanel.Controls.Add(this.SecurityCheckBox, 1, 1);
-            this.SecurityOuterPanel.Controls.Add(this.SecurityPanel, 1, 2);
-            this.SecurityOuterPanel.Name = "SecurityOuterPanel";
-            //
-            // SecurityCheckBox
-            //
-            this.SecurityCheckBox.AutoEllipsis = true;
-            resources.ApplyResources(this.SecurityCheckBox, "SecurityCheckBox");
-            this.SecurityCheckBox.Name = "SecurityCheckBox";
-            this.SecurityCheckBox.UseVisualStyleBackColor = true;
             //
             // SecurityPanel
             //
             resources.ApplyResources(this.SecurityPanel, "SecurityPanel");
-            this.SecurityPanel.Controls.Add(this.UserPasswordCheckBox, 1, 2);
-            this.SecurityPanel.Controls.Add(this.OperationLabel, 0, 2);
-            this.SecurityPanel.Controls.Add(this.OwnerConfirmTextBox, 1, 1);
-            this.SecurityPanel.Controls.Add(this.OwnerConfirmLabel, 0, 1);
-            this.SecurityPanel.Controls.Add(this.OwnerPasswordTextBox, 1, 0);
-            this.SecurityPanel.Controls.Add(this.OwnerPasswordLabel, 0, 0);
-            this.SecurityPanel.Controls.Add(this.OperationPanel, 1, 3);
+            this.SecurityPanel.Controls.Add(this.OwnerPasswordCheckBox, 1, 1);
+            this.SecurityPanel.Controls.Add(this.SecurityInnerPanel, 1, 2);
             this.SecurityPanel.Name = "SecurityPanel";
+            //
+            // OwnerPasswordCheckBox
+            //
+            this.OwnerPasswordCheckBox.AutoEllipsis = true;
+            resources.ApplyResources(this.OwnerPasswordCheckBox, "OwnerPasswordCheckBox");
+            this.OwnerPasswordCheckBox.Name = "OwnerPasswordCheckBox";
+            this.OwnerPasswordCheckBox.UseVisualStyleBackColor = true;
+            //
+            // SecurityInnerPanel
+            //
+            resources.ApplyResources(this.SecurityInnerPanel, "SecurityInnerPanel");
+            this.SecurityInnerPanel.Controls.Add(this.UserPasswordCheckBox, 1, 2);
+            this.SecurityInnerPanel.Controls.Add(this.OperationLabel, 0, 2);
+            this.SecurityInnerPanel.Controls.Add(this.OwnerConfirmTextBox, 1, 1);
+            this.SecurityInnerPanel.Controls.Add(this.OwnerConfirmLabel, 0, 1);
+            this.SecurityInnerPanel.Controls.Add(this.OwnerPasswordTextBox, 1, 0);
+            this.SecurityInnerPanel.Controls.Add(this.OwnerPasswordLabel, 0, 0);
+            this.SecurityInnerPanel.Controls.Add(this.OperationPanel, 1, 3);
+            this.SecurityInnerPanel.Name = "SecurityInnerPanel";
             //
             // UserPasswordCheckBox
             //
@@ -794,9 +794,9 @@
             this.DocumentPanel.ResumeLayout(false);
             this.DocumentPanel.PerformLayout();
             this.SecurityTabPage.ResumeLayout(false);
-            this.SecurityOuterPanel.ResumeLayout(false);
             this.SecurityPanel.ResumeLayout(false);
-            this.SecurityPanel.PerformLayout();
+            this.SecurityInnerPanel.ResumeLayout(false);
+            this.SecurityInnerPanel.PerformLayout();
             this.OperationPanel.ResumeLayout(false);
             this.UserPasswordPanel.ResumeLayout(false);
             this.UserPasswordPanel.PerformLayout();
@@ -862,9 +862,9 @@
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.TabPage SecurityTabPage;
-        private System.Windows.Forms.TableLayoutPanel SecurityOuterPanel;
-        private System.Windows.Forms.CheckBox SecurityCheckBox;
         private System.Windows.Forms.TableLayoutPanel SecurityPanel;
+        private System.Windows.Forms.CheckBox OwnerPasswordCheckBox;
+        private System.Windows.Forms.TableLayoutPanel SecurityInnerPanel;
         private System.Windows.Forms.CheckBox UserPasswordCheckBox;
         private System.Windows.Forms.Label OperationLabel;
         private System.Windows.Forms.TextBox OwnerConfirmTextBox;

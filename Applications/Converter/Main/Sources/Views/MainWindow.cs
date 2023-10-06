@@ -194,8 +194,8 @@ public partial class MainWindow : Window
         // Security
         var s3 = vm.Security;
         var b3 = Behaviors.Hook(new BindingSource(s3, ""));
-        b3.Bind(nameof(s3.Enabled),            SecurityCheckBox,           nameof(SecurityCheckBox.Checked));
-        b3.Bind(nameof(s3.Enabled),            SecurityPanel,              nameof(SecurityPanel.Enabled), true);
+        b3.Bind(nameof(s3.Enabled),            SecurityInnerPanel,         nameof(SecurityInnerPanel.Enabled), true);
+        b3.Bind(nameof(s3.Enabled),            OwnerPasswordCheckBox,      nameof(OwnerPasswordCheckBox.Checked));
         b3.Bind(nameof(s3.OwnerPassword),      OwnerPasswordTextBox,       nameof(OwnerPasswordTextBox.Text));
         b3.Bind(nameof(s3.OwnerConfirm),       OwnerConfirmTextBox,        nameof(OwnerConfirmTextBox.Text));
         b3.Bind(nameof(s3.OpenWithPassword),   UserPasswordCheckBox,       nameof(UserPasswordCheckBox.Checked));
